@@ -15,20 +15,23 @@ My dev platform is Ubuntu 18.04 (actually WSL).
 I stumbled across https://docs.expo.io/ which turned out to be a super-nice development and testing framework for React Native.
 I already had ````npm```` installed, so these are the steps required:
 
-Install Expo:
+Install Expo on your dev platform:
 ````
 npm install --global expo-cli
 ````
-Create a 'Hello world' project template:
+You also need to install the Expo Go client app on your mobile device, just get it from your app store.
+
+Create a 'Hello world'-ish project template:
 ````
 expo init carousel-charts
 cd carousel-charts
 ````
-Run the basic project:
+Note: ````expo init```` will provide a few choices of which template to start with, just choose the default 'Blank' template which strangely enough isn't completely blank.
+Now run this basic project on your mobile app by starting the expo server from where the mobile app will load the app:
 ````
 expo start
 ````
-This brings up a QR code - scan it with your mobile (which already has Expo Go installed, right?) and run the project. At this point, just keep the project running on the mobile device, it will update automatically as you edit code on your workstation.
+This brings up a QR code - scan it with the Expo Go app on your mobile device and run the project. At this point, just keep the project running on the mobile device, it will update automatically as you edit code on your workstation.
 
 Install dependencies for charts and for carousel navigation
 ````
